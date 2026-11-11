@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <style>
+    
+    body{
+      background-color: black;
+      color: beige;
+    }
+
+    
+    
+    .alert {
+      background-color: rgb(255, 0, 0);
+      color: rgb(1, 1, 1);
+      padding: 10px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="heading">Our Solar System </h1>
+    <p>Hi</p>
+
+  </header>
+  <p> Welcome! to the  Solar System</p>
+  <script>
+    let div = document.createElement("div");
+    div.id = "para";
+    div.className = "alert"
+    div.innerHTML = "<p>This Is the solar system emoji.</p>"
+    document.body.append(div);
+
+    let heading = document.getElementById("heading");
+    heading.innerHTML = "🌎"
+    document.querySelector('header p').innerHTML = "<strong>Great Work!!</strong>"
+  </script>
+</body>
+
+</html>
