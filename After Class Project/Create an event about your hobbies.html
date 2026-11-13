@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vanishing Of Will Byers</title>
+    <style>
+        body.dark{
+            background-color: black;
+            color: rgb(255, 255, 255);
+    }
+    </style>
+    
+
+    
+</head>
+<body>
+     <h1>The Vanishing Of Will Byers</h1>
+
+     <button onclick="clickbutton1()">Storyline</button>
+     <h4 id="mar"></h4>
+
+     
+     
+    
+    <button onclick="mood()">Get Into the mood</button>
+    <br>
+    <br>
+    <button onclick="clickbutton()"> Warning : Do not click this button</button>
+    <audio src="dragon-studio-i-see-you-creepy-ghost-whisper-401711 (1).mp3" id="audio"></audio>
+    <img src="download.jpg" width="200" style="display: none;" id="image">
+
+
+    <br>
+    <br>
+
+    <button onclick="find()">Search</button>
+    <h2 id="earth"></h2>
+    <script>
+        function mood() {
+            document.body.className = "dark";
+        }
+
+        function clickbutton() {
+            document.getElementById("audio").play();
+
+            document.getElementById("image").style.display = "block";
+
+        }
+
+        function find() {
+            document.getElementById("earth").innerHTML = "I Have Carefully Searched Everywhere In The City , A There You Are!!!!"
+        }
+
+        function clickbutton1(){
+            document.getElementById("mar").innerHTML="After playing Dungeons & Dragons with his friends Mike, Lucas, and Dustin, 12-year-old Will Byers bikes home alone, encounters a terrifying humanoid creature in the woods, and vanishes without a trace from his backyard shed. As Will's mother Joyce, older brother Jonathan, and Police Chief Jim Hopper launch a frantic search across the town of Hawkins, a mysterious young girl with a shaved head, psychokinetic powers, and a 011 tattoo escapes from a nearby government laboratory. Pursued by deadly agents, the girl flees into the rain-soaked woods, where she crosses paths with Mike, Dustin, and Lucas while they are out searching for their missing friend."
+        }
+
+
+
+    </script>
+</body>
+</html>
